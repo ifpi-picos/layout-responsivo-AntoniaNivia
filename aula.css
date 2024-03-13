@@ -23,6 +23,24 @@ main{
     padding: 10px 0;
 }
 
+main div{
+   flex-grow: 2;
+    background-color: orange;
+    height: 100%;
+}
+
+@media(max-width: 768px) {
+    main div{
+        width: 48%
+    }
+}
+
+@media(max-width: 576px) {
+    main div{
+        width: 100%
+    }
+}
+
 header{
     background-color: blueviolet;
 
@@ -33,11 +51,7 @@ footer{
     height: 60px;
 }
 
-main div{
-   flex-grow: 2;
-    background-color: orange;
-    height: 100%;
-}
+
 
 .dobro{
     flex-grow: 2;
