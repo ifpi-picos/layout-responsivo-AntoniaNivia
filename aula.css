@@ -16,31 +16,6 @@ header, footer{
 
 }
 
-main{
-    height: calc(100vh - 120px);
-    display: flex;
-    gap: 10px;
-    padding: 10px 0;
-}
-
-main div{
-   flex-grow: 2;
-    background-color: orange;
-    height: 100%;
-}
-
-@media(max-width: 768px) {
-    main div{
-        width: 48%
-    }
-}
-
-@media(max-width: 576px) {
-    main div{
-        width: 100%
-    }
-}
-
 header{
     background-color: blueviolet;
 
@@ -51,8 +26,34 @@ footer{
     height: 60px;
 }
 
-
-
-.dobro{
-    flex-grow: 2;
+main{
+    height: calc(100vh - 120px);
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+main div{
+    width: 30%;
+    background-color: orange;
+    height: 100%;
+}
+
+@media(max-width: 768px) {
+    main {
+        height: auto;
+    }
+    main div{
+        width: 45%;
+        height: 100vh;
+    }
+}
+
+@media(max-width: 576px) {
+    main div{
+        width: 98%
+    }
+}
+
