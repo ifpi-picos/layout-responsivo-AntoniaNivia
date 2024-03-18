@@ -17,13 +17,30 @@ header, footer{
 }
 
 header{
-    background-color: blueviolet;
+    background-color: palevioletred;
+    justify-content: center;
+}
 
+.cabeçalho {
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 footer{
-    background-color: brown;
-    height: 60vh;
+    background-color: palevioletred;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h3{
+    color: black;
 }
 
 main{
